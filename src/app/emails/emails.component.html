@@ -1,0 +1,29 @@
+<style>
+  table{
+    border: 5px solid black;
+    padding: 5px;
+  }
+  td{
+    text-align: left;
+    padding: 5px;
+  }
+  th{
+    text-align: left;
+  }
+</style>
+<h1>Dojo Mail</h1>
+<table>
+  <tr>
+    <th>Email</th>
+    <th>Importance</th>
+    <th>Subject</th>
+    <th>Content</th>
+  </tr>
+  <tr *ngFor='let email of emails'>
+    <td>{{email.from}}</td>
+    <td>{{email.importance}}</td>
+    <td>{{email.subject}}</td>
+    <td>{{email.content}}</td>
+  </tr>
+
+</table>
